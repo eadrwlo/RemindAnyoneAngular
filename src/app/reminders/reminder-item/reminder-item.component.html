@@ -1,0 +1,17 @@
+<div class="reminder-item" [class]="getSeverityClass()">
+    <div class="reminder-header">
+        <h3 class="reminder-title">{{ reminder.title }}</h3>
+        <p class="reminder-description">{{ reminder.description }}</p>
+    </div>
+
+    <div class="reminder-dates">
+        <p class="reminder-date due-date">
+            <span class="label">Due Date:</span>
+            {{ reminder.dueDate | date:'dd-MM-yyyy HH:mm' }}
+        </p>
+        <p class="reminder-date created-date">
+            <span class="label">Created Date:</span>
+            {{ reminder.createdDate | date:'dd-MM-yyyy HH:mm' }}
+        </p>
+    </div>
+</div>

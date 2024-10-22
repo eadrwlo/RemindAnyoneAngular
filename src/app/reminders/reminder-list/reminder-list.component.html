@@ -1,0 +1,7 @@
+<div class="reminder-list">
+    @for (reminder of reminders; track reminder.id)
+    {
+    <app-reminder-item [reminder]="reminder"></app-reminder-item>
+    }
+    <!-- <app-reminder-item *ngFor="let reminder of reminders" [reminder]="reminder"></app-reminder-item> -->
+</div>

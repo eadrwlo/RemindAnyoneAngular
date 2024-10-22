@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="column">
+    <h2>Reminders For Me</h2>
+    <!-- Placeholder for reminders for the user -->
+    <app-reminder-list [reminders]="getRemindersForMeArray()"></app-reminder-list>
+  </div>
+  <div class="column">
+    <h2>Reminders For Others</h2>
+    <!-- Placeholder for reminders set for others -->
+    <app-reminder-list [reminders]="remindersForOthers"></app-reminder-list>
+  </div>
+</div>
+
+<router-outlet />

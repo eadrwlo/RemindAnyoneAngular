@@ -1,0 +1,76 @@
+.reminder-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    /* Increased padding for better spacing */
+    margin: 12px 0;
+    /* Increased margin for vertical spacing between items */
+    border-radius: 8px;
+    /* Slightly increased radius for a softer card look */
+    background-color: #f9f9f9;
+    /* Subtle background for a cleaner look */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+.reminder-item:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    /* Slightly more intense shadow on hover */
+}
+
+/* Severity-based styles */
+.severity-3 {
+    background-color: #ffe6e6;
+    /* Softer red background */
+    border-color: #ff4d4d;
+    /* Bright red for stronger contrast */
+}
+
+.severity-2 {
+    background-color: #e6f0ff;
+    /* Softer blue background */
+    border-color: #3399ff;
+    /* Brighter blue for contrast */
+}
+
+.severity-1 {
+    background-color: #e6ffe6;
+    /* Softer green background */
+    border-color: #34c759;
+    /* Brighter green for visibility */
+}
+
+/* Title styling */
+.reminder-item h3 {
+    margin: 0 0 8px 0;
+    /* More space below the title */
+    font-size: 1.25em;
+    /* Slightly larger font for better readability */
+    font-weight: bold;
+    color: #333;
+    /* Darker color for better contrast */
+}
+
+/* Paragraph styling */
+.reminder-item p {
+    margin: 4px 0;
+    /* Consistent spacing between paragraphs */
+    color: #666;
+    /* Lighter color for secondary information */
+    font-size: 0.95em;
+    /* Slightly smaller font for details */
+}
+
+/* Date styling */
+.reminder-item .reminder-date {
+    font-size: 0.85em;
+    /* Smaller font for dates */
+    color: #888;
+    /* Lighter gray for date text */
+}
+
+.label {
+    font-weight: 600;
+    /* Emphasize labels like 'Due Date' and 'Created Date' */
+}
