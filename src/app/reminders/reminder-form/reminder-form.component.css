@@ -1,0 +1,90 @@
+/* Styling for the form container */
+.create-reminder-panel {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between form groups */
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333; /* Dark text for better readability */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:disabled {
+  background-color: #ccc; /* Greyed out for disabled button */
+  cursor: not-allowed;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .create-reminder-panel {
+    padding: 15px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa; /* Light grey color for hints */
+  font-style: italic; /* Italic style for differentiation */
+}

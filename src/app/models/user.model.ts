@@ -3,6 +3,6 @@ export interface UserInterface {
     username: string;
     name: string;
     lastName: string;
-    remindersForMe: number[];
-    remindersForOthers: number[];
+    remindersForMe: string[];
+    remindersForOthers: string[];
 }
